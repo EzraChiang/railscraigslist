@@ -1,0 +1,7 @@
+<h1>Craigslist Jr</h1>
+
+<% @categories.each do |category| %>
+  <ul>
+    <li><a href="/categories/<%= category.id %>"><%= category.name %></a></li>
+  </ul>
+<% end %>

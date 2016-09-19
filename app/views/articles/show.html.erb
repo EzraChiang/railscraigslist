@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+
+<p><%= @article.created_at %></p>
+<%= link_to "Back", "/categories/#{@category.id}" %>
+<%# link_to "Edit", edit_category_article_path(@category, @article) %>
+<%= link_to "Destroy", category_article_path(@category, @article), method: :delete, data: { confirm: "Are you sure?"} %>

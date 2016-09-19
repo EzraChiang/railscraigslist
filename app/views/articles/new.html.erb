@@ -1,0 +1,11 @@
+<h1> New article</h1>
+
+<%= render 'form' %>
+
+<%= link_to "Back", categories_path %>
+
+<% if @errors %>
+  <% @errors.each do |error| %>
+    <p><%= error %></p>
+  <% end %>
+<% end %>
